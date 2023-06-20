@@ -1,0 +1,42 @@
+h1 {
+    height: 150px;
+}
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+form {
+    height: 200px;
+    text-align: center;
+}
+.div {
+    height: 150px;
+}
+input {
+    background-color: #c6c1c0;
+    height: 15px;
+}
+
+button {
+    background-color: #f02f4c;
+    color: black;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+
+}
+label {
+    color: red;
+}
+button {
+    width: 120px ;
+        
+}
+
+.btn-animation {
+    background-color: #ff1e6c;
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+.btn-animation:hover {
+    transform: scale(1.1);
+}

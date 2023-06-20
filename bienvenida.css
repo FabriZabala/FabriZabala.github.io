@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-image:url("images/fondo1.jpeg");
+    background-repeat: repeat;
+    background-size: 50%;
+}
+.contenedor {
+    width: 100%;
+    margin: auto;
+   }
+   
+   .imagen {
+    margin: 3.5px;
+    transition: all 400ms;
+   
+   }
+   .galeria .contenedor {
+       display: grid;
+   }
+   @media(min-width:520px){
+      .galeria .contenedor{
+       grid-template-columns: repeat(3,33.3%);
+       }
+   }
+   
+   @media(min-width:1000px){
+       .contenedor{
+            width: 1000px;
+       }
+   }
+   
+   img:hover {
+       transform: scale(1.15);
+   }

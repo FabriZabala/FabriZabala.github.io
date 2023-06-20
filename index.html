@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DANI</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Página de preguntas para un Repasador</h1>
+    <form id="question-form" onsubmit="return checkAnswers()">
+        <label for="question1">¿Me queres?</label>
+        <br></br>
+        <input type="text" id="question1" required>
+        <br><br>
+        <label for="question2">¿Queres ver algo lindo?</label>
+        <br></br>
+        <input type="text" id="question2" required>
+        <br><br>
+        <button type="submit" class="btn-animation">Enviar respuestas</button>
+    </form>
+    <div class="div">
+        <br>
+        <h1>Si contestas bien, Vas a poder ver lo demas...</h1>
+        <br>
+        <br>
+    </div>
+    <script>
+        function checkAnswers() {
+            var answer1 = document.getElementById("question1").value.toLowerCase();
+            var answer2 = document.getElementById("question2").value.toLowerCase();
+
+            if (answer1 === "si" && answer2 === "si") {
+                window.location.href = "bienvenida.html";
+                return false; // Evita el envío del formulario
+            } else {
+                alert("NO PODES ENTRAR SI NO ME QUERES.");
+                return false; // Evita el envío del formulario
+            }
+        }
+    </script>
+</body>
+</html>
